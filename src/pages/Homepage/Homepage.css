@@ -1,0 +1,17 @@
+/* Custom styles for Homepage */
+
+.App {
+    position: relative;
+  }
+  
+  header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;  
+  }
+  
+  .banner {
+    margin-top: -20px;  
+    z-index: 1;
+  }
