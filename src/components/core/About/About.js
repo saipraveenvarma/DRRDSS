@@ -40,7 +40,7 @@ const About = () => {
     top: '20px',
     color: 'white', // Set text color to white
     fontFamily: '"Times New Roman", Times, serif',
-    fontSize: '150px', // Increased font size
+    fontSize: '100px', // Increased font size
     textTransform: 'uppercase', // Make text uppercase
   };
 
@@ -63,7 +63,6 @@ const About = () => {
     color: 'white', // Set text color to white
     fontFamily: '"Times New Roman", Times, serif',
     fontSize: '10px', // Adjust font size as needed
-    textTransform: 'uppercase', // Make text uppercase
     textAlign: 'left', // Align text to the left
   };
 
@@ -110,7 +109,7 @@ const About = () => {
 
         {/* Content with image and additional text side by side */}
         <div style={contentStyle}>
-          <img src="/map.webp" alt="Map" style={imageStyle} />
+          <img src="/map4.png" alt="Map" style={imageStyle} />
           <div style={rightTextStyle}>
             <h2>The Disaster Risk Reduction and Decision Support System (DRRDSS) is designed to enhance early warning capabilities and facilitate proactive disaster risk management activities. </h2>
           </div>
