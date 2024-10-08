@@ -8,9 +8,9 @@ import Roadaccidents from "../../components/core/Roadaccidents/Roadaccidents";
 import Flood from "../../components/core/Flood/Flood";
 import Earthquake from "../../components/core/Earthquake/Earthquake";
 
-import "./Homepage.css";
+import "./Dashboard.css";
 
-function Homepage() {
+function Dashboard() {
   const cyloneRef = useRef(null);        // Ref for Cylone
   const landslideRef = useRef(null);     // Ref for Landslide
   const earthquakeRef = useRef(null);    // Ref for Earthquake
@@ -87,4 +87,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default Dashboard;
