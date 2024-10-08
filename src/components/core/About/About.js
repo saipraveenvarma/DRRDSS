@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
 const About = () => {
-  const navigate = useNavigate(); // Initialize the useNavigate hook
-  const [scrolling, setScrolling] = useState(false); // State to control scroll animation
+  const navigate = useNavigate();
+  const [scrolling, setScrolling] = useState(false); 
 
   useEffect(() => {
     const handleScroll = () => {
