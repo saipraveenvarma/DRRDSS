@@ -3,23 +3,54 @@ import Header from "../../components/Common/Header/Header";
 import Banner from "../../components/core/Banner/Banner";
 import Cylone from "../../components/core/Cylone/Cylone";
 import Landslide from "../../components/core/Landslide/Landslide";
-
-import "./Homepage.css";
+import Cityfire from "../../components/core/Cityfire/Cityfire";
+import Roadaccidents from "../../components/core/Roadaccidents/Roadaccidents";
+import Flood from "../../components/core/Flood/Flood";
 import Earthquake from "../../components/core/Earthquake/Earthquake";
 
+import "./Homepage.css";
+
 function Homepage() {
-  const cyloneRef = useRef(null); // Create a ref for the Cylone component
-  const landslideRef = useRef(null); // Create a ref for the Landslide component
+  const cyloneRef = useRef(null);        // Ref for Cylone
+  const landslideRef = useRef(null);     // Ref for Landslide
+  const earthquakeRef = useRef(null);    // Ref for Earthquake
+  const cityfireRef = useRef(null);      // Ref for Cityfire
+  const roadaccidentsRef = useRef(null); // Ref for Roadaccidents
+  const floodRef = useRef(null);         // Ref for Flood
 
   const handleCyloneClick = () => {
     if (cyloneRef.current) {
-      cyloneRef.current.scrollIntoView({ behavior: "smooth" }); // Scroll to Cylone component
+      cyloneRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   const handleLandslideClick = () => {
     if (landslideRef.current) {
-      landslideRef.current.scrollIntoView({ behavior: "smooth" }); // Scroll to Landslide component
+      landslideRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleEarthquakeClick = () => {
+    if (earthquakeRef.current) {
+      earthquakeRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleCityfireClick = () => {
+    if (cityfireRef.current) {
+      cityfireRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleRoadaccidentsClick = () => {
+    if (roadaccidentsRef.current) {
+      roadaccidentsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleFloodClick = () => {
+    if (floodRef.current) {
+      floodRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -27,16 +58,31 @@ function Homepage() {
     <div className="App">
       <Header 
         onCyloneClick={handleCyloneClick} 
-        onLandslideClick={handleLandslideClick} // Pass the click handler for Landslide
+        onLandslideClick={handleLandslideClick} 
+        onEarthquakeClick={handleEarthquakeClick}  
+        onCityfireClick={handleCityfireClick}      
+        onRoadaccidentsClick={handleRoadaccidentsClick} 
+        onFloodClick={handleFloodClick}            
       />
       <Banner />
-      <div ref={cyloneRef}> {/* Attach the ref to a div that wraps the Cylone component */}
+      <div ref={cyloneRef}>
         <Cylone />
       </div>
-      <div ref={landslideRef}> {/* Attach the ref to a div that wraps the Landslide component */}
+      <div ref={landslideRef}>
         <Landslide />
       </div>
-      <Earthquake />
+      <div ref={earthquakeRef}>
+        <Earthquake />
+      </div>
+      <div ref={cityfireRef}>
+        <Cityfire />
+      </div>
+      <div ref={roadaccidentsRef}>
+        <Roadaccidents />
+      </div>
+      <div ref={floodRef}>
+        <Flood />
+      </div>
     </div>
   );
 }

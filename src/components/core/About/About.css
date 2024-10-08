@@ -1,0 +1,17 @@
+.header-right {
+    position: relative; /* Ensure children are positioned correctly */
+  }
+  
+  .scroll-to-top {
+    position: absolute; /* Position the arrow absolutely */
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    cursor: pointer; /* Show pointer on hover */
+    font-size: 24px; /* Adjust size of arrow */
+    color: #000; /* Change color to match your design */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .scroll-to-top:hover {
+    color: #f00; /* Change color on hover */
+  }
