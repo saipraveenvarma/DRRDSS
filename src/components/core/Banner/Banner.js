@@ -8,7 +8,7 @@ const Banner = () => {
       <div className="image-container">
         <video
           className="banner-video"
-          src="/Banner/B.mp4"
+          src="/Banner/opening-video.mp4"
           style={{ width: "100%", height: "100vh", objectFit: "cover" }}
           autoPlay
           loop
